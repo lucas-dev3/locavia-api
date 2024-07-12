@@ -1,0 +1,19 @@
+version: "3"
+services:
+  api:
+    image: "api-locavia:latest"
+    build:
+      context: "."
+      target: "production"
+    env_file:
+      - ".env"
+    ports:
+      - mode: "host"
+        target: 3000
+        published: 3000
+        protocol: "tcp"
+    volumes:
+      - "api_data:/srv/data"
+
+volumes:
+  api_data:
