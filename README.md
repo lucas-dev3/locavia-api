@@ -6,12 +6,12 @@ Este é um projeto backend para gerenciamento de veículos, desenvolvido em Node
 
 - CRUD de veículos com os seguintes atributos:
   - id
-  - placa
-  - chassi
+  - licensePlate
+  - chassis
   - renavam
-  - modelo
-  - marca
-  - ano
+  - model
+  - brand
+  - year
 
 ## Pré-requisitos
 
@@ -76,12 +76,12 @@ Para rodar os testes unitários, siga os passos abaixo:
   - Body: 
     ```json
     {
-      "placa": "ABC1234",
-      "chassi": "12345678901234567",
+      "licensePlate": "ABC1234",
+      "chassis": "12345678901234567",
       "renavam": "12345678901",
-      "modelo": "Modelo X",
-      "marca": "Marca Y",
-      "ano": "2020"
+      "model": "Modelo X",
+      "brand": "Marca Y",
+      "year": "2020"
     }
     ```
 
@@ -95,13 +95,13 @@ Para rodar os testes unitários, siga os passos abaixo:
 - **PATCH** `/vehicles/:id`
   - Body: 
     ```json
-    {
-      "placa": "ABC1234",
-      "chassi": "12345678901234567",
+     {
+      "licensePlate": "ABC1234",
+      "chassis": "12345678901234567",
       "renavam": "12345678901",
-      "modelo": "Modelo X",
-      "marca": "Marca Y",
-      "ano": 2021
+      "model": "Modelo X",
+      "brand": "Marca Y",
+      "year": "2020"
     }
     ```
 
