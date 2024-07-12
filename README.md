@@ -112,9 +112,23 @@ Para rodar os testes unitários, siga os passos abaixo:
 
     .
     ├── src
-    │   ├── controllers
-    │   ├── models
-    │   ├── routes
-    │   ├── services
-    │   └── app.js
+    │   ├── app
+    |      ├── controllers
+    |      ├── dto
+    |      ├── interfaces
+    |      ├── services
+    |      ├── use-cases
+    │   ├── commom
+    |      ├── decorators
+    |      ├── filters
+    |      ├── interceptors
+    │   ├── domain
+    |      ├── entities
+    |      ├── repositories
+    │   ├── infra
+    |      ├── config
+    |      ├── persistense
+    |      ├── providers
+    │   └── app.module.ts
+    |   └── main.ts
     ├── test
