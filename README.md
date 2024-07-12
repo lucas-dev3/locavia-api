@@ -39,8 +39,8 @@ Este é um projeto backend para gerenciamento de veículos, desenvolvido em Node
 
 1. Clone o repositório:
     ```bash
-    git clone <URL_DO_REPOSITORIO>
-    cd <NOME_DO_REPOSITORIO>
+    git clone git@github.com:lucas-dev3/locavia-api.git
+    cd locavia-api
     ```
 
 2. Instale as dependências:
@@ -53,7 +53,7 @@ Este é um projeto backend para gerenciamento de veículos, desenvolvido em Node
     npm start
     ```
 
-4. A API estará disponível em: `http://localhost:3000`
+4. A API estará disponível em: `http://localhost:3001`
 
 ## Executando os testes unitários
 
@@ -61,12 +61,12 @@ Para rodar os testes unitários, siga os passos abaixo:
 
 1. Certifique-se de estar no diretório do projeto:
     ```bash
-    cd <NOME_DO_REPOSITORIO>
+    cd git@github.com:lucas-dev3/locavia-api.git
     ```
 
 2. Execute os testes:
     ```bash
-    npm test
+    npm run test
     ```
 
 ## Endpoints da API
@@ -76,12 +76,12 @@ Para rodar os testes unitários, siga os passos abaixo:
   - Body: 
     ```json
     {
-      "placa": "ABC-1234",
+      "placa": "ABC1234",
       "chassi": "12345678901234567",
       "renavam": "12345678901",
       "modelo": "Modelo X",
       "marca": "Marca Y",
-      "ano": 2020
+      "ano": "2020"
     }
     ```
 
@@ -92,11 +92,11 @@ Para rodar os testes unitários, siga os passos abaixo:
 - **GET** `/vehicles/:id`
 
 ### Atualizar um veículo
-- **PUT** `/vehicles/:id`
+- **PATCH** `/vehicles/:id`
   - Body: 
     ```json
     {
-      "placa": "ABC-1234",
+      "placa": "ABC1234",
       "chassi": "12345678901234567",
       "renavam": "12345678901",
       "modelo": "Modelo X",
