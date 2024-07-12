@@ -24,8 +24,8 @@ Este é um projeto backend para gerenciamento de veículos, desenvolvido em Node
 
 1. Clone o repositório:
     ```bash
-    git clone <URL_DO_REPOSITORIO>
-    cd <NOME_DO_REPOSITORIO>
+    git clone git@github.com:lucas-dev3/locavia-api.git
+    cd locavia-api
     ```
 
 2. Execute o Docker Compose:
@@ -33,7 +33,7 @@ Este é um projeto backend para gerenciamento de veículos, desenvolvido em Node
     docker-compose up --build
     ```
 
-3. A API estará disponível em: `http://localhost:3000`
+3. A API estará disponível em: `http://localhost:3001`
 
 ### Rodando localmente
 
